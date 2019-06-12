@@ -36,7 +36,6 @@ def mergesort(arr): #Calls itself to divide the array in to size one
 
 def merge(arr1,arr2): #Merging the arr
     arr_merge = []
-    print(arr1,arr2)
 
     while len(arr1) and len(arr2) != 0:
         if arr1[0] > arr2[0]:
@@ -59,4 +58,14 @@ def merge(arr1,arr2): #Merging the arr
 
 #Test
 if __name__ == "__main__":
-    assert help_func([4,3,2,1]) == True
+    #assert help_func(1) == False
+    #assert help_func([]) == False
+    assert help_func([3,2,1,4,5,6]) == True
+    assert help_func([9,100,32,43,546,10,2,3]) == True
+    assert help_func([2392,43092,239103,3242]) == True
+    assert help_func([1,2,3,4]) == True
+
+
+    assert help_func([-1,-1,2,1]) == True
+    assert help_func([-1,-1,-22,1]) == True
+    assert help_func([-23242,-424232,-431,-1,-343,23,43023,349034]) == True
