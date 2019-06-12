@@ -1,2 +1,6 @@
 ### Sommar Programmering
-Denna git innehåller alla projekt under sommaren 2019
+Följande projekt innefattas av denna git
+* Insertion sort
+* Mergesort
+* Eulersmetod
+* Trapetsmetoden
