@@ -11,7 +11,7 @@ def is_list_sorted(arr): #A function to check if the list is sorted for testing
 
         
 def insertion(arr):
-
+    print(arr)
     if len(arr) == 0:    return False  #In consideration if the array is empty
             
     for i in range(0,len(arr)-1): #Looping through the array
@@ -27,5 +27,6 @@ def insertion(arr):
 #Test
 if __name__ == "__main__":
     #Asserting 97 random generated arrays to see if they become sorted after entering the function insertion
-    for i in range(2,100): #Less is more
-        assert insertion(np.random.rand(i,1)) == True
+
+    for i in range(2,100):
+        assert insertion(np.random.randint(0,200,i)) == True
