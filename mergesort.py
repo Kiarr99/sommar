@@ -36,6 +36,7 @@ def mergesort(arr): #Calls itself to divide the array in to size one
 
 def merge(arr1,arr2): #Merging the arr
     arr_merge = []
+    print(arr1,arr2)
 
     while len(arr1) and len(arr2) != 0:
         if arr1[0] > arr2[0]:
@@ -51,7 +52,7 @@ def merge(arr1,arr2): #Merging the arr
         arr_merge.append(arr1[0])
         np.delete(arr1,0)
     while len(arr2) != 0:
-        arr_merge.append(arr1[0])
+        arr_merge.append(arr2[0])
         np.delete(arr2,0)
 
     return arr_merge
