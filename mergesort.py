@@ -41,25 +41,22 @@ def merge(arr1,arr2): #Merging the arr
     while len(arr1) and len(arr2) != 0:
         if arr1[0] > arr2[0]:
             arr_merge.append(arr2[0])
-            np.delete(arr2,0)
+            arr2.remove(arr2[0])
         else:
             arr_merge.append(arr1[0])
-            np.delete(arr1,0)
+            arr1.remove(arr1[0])
 
     #Either arr1 is empty or arr2 is empty
 
     while len(arr1) != 0:
         arr_merge.append(arr1[0])
-        np.delete(arr1,0)
+        arr1.remove(arr1[0])
     while len(arr2) != 0:
         arr_merge.append(arr2[0])
-        np.delete(arr2,0)
+        arr2.remove(arr2[0])
 
     return arr_merge
 
 #Test
 if __name__ == "__main__":
     assert help_func([4,3,2,1]) == True
-
-    #for i in range(3,100):
-     #   assert help_func(np.random.randint(0,200,i)) == True
