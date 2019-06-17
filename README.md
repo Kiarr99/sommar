@@ -5,3 +5,5 @@ Följande projekt innefattas av denna git
 * Eulersmetod
 * Trapetsmetoden
 * En sketch till en hemsida
+* En excel fil för att mäta antal timmar per dag som spenderas att göra hemsidan
+* icon.png
