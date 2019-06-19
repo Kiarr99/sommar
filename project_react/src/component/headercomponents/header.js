@@ -29,11 +29,17 @@ const Headwrapper = styled.header `
             list-style-type: none;
         
     }
+    .list {
+        display:flex;
+        justify-content: space-around;
+    }
     
 
 }
 `
 const A = styled.a`
+    margin-right: 50%;
+    margin-left: 27%;
     position:relative;
     font-size: 20px;
     color: #ffffff;
@@ -67,17 +73,10 @@ const A = styled.a`
 
     }
     
-    .last {
-        width: 30px;
-    }
-    
         
 `
 
-const Div = styled.div`
-    margin: 0px;
 
-`
 function Header() {
   return (
         <Headwrapper> 
@@ -90,8 +89,9 @@ function Header() {
 
             <nav>
                 <ul>
-                    <li className = "first">
+                    <li className = "list">
                         <A href = "#">Hem</A>
+                        <A href = "#">Meny</A>
                     </li>
                 </ul>
             </nav>

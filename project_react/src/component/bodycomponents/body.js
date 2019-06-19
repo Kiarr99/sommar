@@ -29,7 +29,7 @@ const Bodywrapper = styled.body `
         color: var(--mainWhite);
         margin-top: 15%;
         display: flex;
-        justify-content: space-between;
+        justify-content:space-between;
         font-family: 'Montserrat', sans-serif;
 
 
@@ -40,7 +40,11 @@ const Bodywrapper = styled.body `
             color: var(--mainGrey);
         }
 
-
+    img {
+        margin-right:20%;
+        max-width: 20%;
+        height: 22%;
+    }
 `
 const Mark = styled.mark `
     color: var(--mainRed);
@@ -61,7 +65,7 @@ function Body() {
           <div> 
                 <ul>
                     <li className = "list">
-                        <a>Om oss</a>
+                        <a>Om oss   <img src = "https://i.imgur.com/YlnoTG0.png"/> </a> 
                         <a className = "arskurs">Välj årskurs nedanför</a>
                     </li>
                 </ul>
