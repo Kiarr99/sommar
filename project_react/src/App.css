@@ -4,3 +4,7 @@
     --mainWhite: #ffffff;
     --mainGrey: #707070;
 }
+body {
+    overflow-x:hidden;
+    background: var(--mainDarkblue); /* Makes the background to the color mainDarkblue*/
+}

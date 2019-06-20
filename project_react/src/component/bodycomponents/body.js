@@ -7,6 +7,7 @@ const Bodywrapper = styled.body `
     height: 25rem;
     margin-top: -4rem;
     background-color: #2A2F36; 
+    overflow-x: visible;
 
     .container {
         background-color: #2A2F36; 
@@ -71,6 +72,7 @@ function Body() {
                 </ul>
           </div>
       </Bodywrapper>
+      
         
   );
 }
