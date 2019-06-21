@@ -20,13 +20,22 @@ const Footerwrapper = styled.footer `
   }
 
   .container-1 {
-    height: 11rem;
-  }
+    height: 12rem;
+    transition: 0.3;
+    background-color: var(--mainDarkblue);
+    &:hover {
+      background-color: #d9a7c7;  /* fallback for old browsers */
+      background-color: -webkit-linear-gradient(to right, #fffcdc, #d9a7c7);  /* Chrome 10-25, Safari 5.1-6 */  
+      background-color: linear-gradient(to right, #fffcdc, #d9a7c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+    }
+  };
   .container-2 {
-    height: 11rem;
+    height: 12rem;
   }
   .container-3 {
-    height: 11rem;
+    height: 12rem;
   }
 
   .container-4 {
@@ -47,43 +56,85 @@ const Footerwrapper = styled.footer `
 
 
 `
+//After reading the documentations we can do the following instead of using className
+const Div1 = styled.div `
+  height: 12rem;  
+  background: var(--mainDarkblue);
+
+  transition: 1s;
+  
+    &:hover {
+      background: #ff7e5f;  /* fallback for old browsers */
+     
+    }
+
+
+
+
+`;
+
+const Div2 = styled(Div1) `
+&:hover {
+      background: #d9a7c7;;  /* fallback for old browsers */
+     
+    }
+
+
+`;
+
+const Div3 = styled(Div1) `
+&:hover {
+      background: #a8ff78;  /* fallback for old browsers */
+     
+    }
+
+
+`;
+const Div4 = styled(Div1) `
+&:hover {
+      background: #FFEFBA;  /* fallback for old browsers */
+     
+    }
+
+
+`;
 
 function Footer() {
   return (
         <Footerwrapper> 
           <hr>
           </hr>
-          <div className = "container-1">
+          <Div1>
           <p>
             Årskurs
           </p>
           <h1>1</h1>
-          </div>
+          </Div1>
           <hr>
           </hr> 
-          <div className = "container-2">
+          <Div2>
           <p>
             Årskurs
           </p>
           <h1>2</h1>
-          </div>
+          </Div2>
           <hr>
           </hr> 
           
-          <div className = "container-3">
+          <Div3>
           <p>
             Årskurs
           </p>
           <h1>3</h1>
-          </div>
+          </Div3>
           <hr>
           </hr> 
-          <div className = "container-4">
+          <Div4>
           <p>
               
           </p>
           <h2 className = "omoss">Om oss</h2>
-          </div>
+          </Div4>
 
         </Footerwrapper>
   );

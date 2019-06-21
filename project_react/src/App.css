@@ -5,6 +5,7 @@
     --mainGrey: #707070;
 }
 body {
+    margin: 0;
     overflow-x:hidden;
     background: var(--mainDarkblue); /* Makes the background to the color mainDarkblue*/
 }
