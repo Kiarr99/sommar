@@ -90,8 +90,8 @@ function Header() {
             <nav>
                 <ul>
                     <li className = "list">
-                        <A href = "#">Hem</A>
-                        <A href = "#">Meny</A>
+                        <A href = "/hem">Hem</A>
+                        <A href = "/meny">Meny</A>
                     </li>
                 </ul>
             </nav>
